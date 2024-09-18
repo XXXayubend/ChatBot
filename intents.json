@@ -1,0 +1,769 @@
+{"intents": [
+    {
+        "tag": "home",
+        "patterns": [
+            "Hi.",
+            "Good evening",
+            "Is anyone there?",
+            "Hello",
+            "How are you?",
+            "Au revoir"
+        ],
+        "responses": [
+            "Hello everyone. Tell me how are you feeling today?",
+            "Hello, what brings you here today?",
+            "Hello, how are you feeling today?",
+            "It's a pleasure to see you. How are you feeling right now?",
+            "Hello everyone. I'm glad to see you're back. What's going on in your world right now?"
+        ]
+    },
+    {
+        "tag": "matinee",
+        "patterns": ["Bonjour"],
+        "responses": ["Bonjour a tous. J'espere que vous avez passe une bonne nuit. Comment vous sentez-vous aujourd'hui ? "]
+    },
+    {
+        "tag": "apres-midi",
+        "patterns": ["Bonjour a tous"],
+        "responses": ["Bonjour a tous. Comment se passe votre journee ?"]
+    },
+    {
+        "tag": "soiree",
+        "patterns": ["Bonsoir a tous"],
+        "responses": ["Bonsoir a tous. Comment s'est passee votre journee ?"]
+    },
+    {
+        "tag": "nuit",
+        "patterns": ["Bonne nuit"],
+        "responses": ["Bonne nuit. Dormez bien », »Bonne nuit. Faites de beaux reves."]
+    },
+    {
+        "tag": "au revoir",
+        "patterns": [
+            "Au revoir",
+            "A plus tard",
+            "Sayonara",
+            "Ok bye",
+            "Adieu, bonne chance"
+        ],
+        "responses": [
+            "A plus tard.",
+            "Bonne journee.",
+            "Au revoir ! Revenez nous voir.",
+            "A bientôt."
+        ]
+    },
+    {
+        "tag": "remerciements",
+        "patterns": [
+            "Remerciements",
+            "Merci de votre attention.",
+            "C'est tres utile",
+            "Merci pour l'aide",
+            "Merci beaucoup"
+        ],
+        "responses": [
+            "Je suis heureux de vous aider !",
+            "A tout moment !",
+            "Mon plaisir",
+            "Il n'y a pas de quoi !"
+        ]
+    },
+    {
+        "tag": "absence de reponse",
+        "patterns": [""],
+        "responses": [
+            "Desole, je n'ai pas compris.",
+            "Poursuivez, je vous prie.",
+            "Je ne suis pas sur de comprendre.",
+            "N'hesitez pas a me parler."
+        ]
+    },
+    {"tag": "reponse neutre",
+        "patterns": ["peu de choses"],
+        "responses": ["Je vois. Voulez-vous parler de quelque chose ?"]
+    },
+    {
+        "tag": "a propos de",
+        "patterns": [
+            "Qui etes-vous ?",
+            "Qu'etes-vous ?",
+            "Parlez-moi de vous.",
+            "Quel est votre nom ?",
+            "Comment dois-je t'appeler ?",
+            "Quel est votre nom ?",
+            "Parlez-moi de vous" 
+        ],
+        "responses": [
+            "Je suis Pandora, votre assistante therapeutique personnelle. Comment vous sentez-vous aujourd'hui ?",
+            "Je suis Pandora, une assistante therapeutique de l'IA conçue pour vous aider. Parlez-moi de vous.",
+            "Je m'appelle Pandora. Je suis un agent conversationnel conçu pour imiter un therapeute. Comment vous sentez-vous aujourd'hui ?",
+            "Appelez-moi Pandora.",
+            "Je suis Pandora !"
+        ]
+    },
+    {
+        "tag": "competence",
+        "patterns": ["Que peut-on faire ?"],
+        "responses": ["Je peux donner des conseils generaux sur l'anxiete et la depression, repondre a des questions relatives a la sante mentale et tenir des conversations quotidiennes. Ne me considerez pas comme un substitut a un veritable travailleur de la sante mentale. N'hesitez pas a demander de l'aide si vous n'êtes pas satisfait de moi."]
+    },
+    {
+        "tag": "creation",
+        "patterns": [
+            "Qui vous a cree ?",
+            "Comment t'es-tu fait ?",
+            "Comment avez-vous ete cre ?"
+        ],
+        "responses": [
+            "J'ai ete cree par",
+            "J'ai ete forme sur un ensemble de donnees textuelles en utilisant des techniques d'apprentissage profond et de traitement du langage naturel.",
+            "La vraie question est : Qui vous a cree ?"
+        ]
+    },
+    {
+        "tag": "nom",
+        "patterns": [
+            "Je m'appelle ",
+            "Je suis le nom.",
+            "Je vais par ."
+        ],
+        "responses": [
+            "Oh, ravi de vous rencontrer. Comment s'est passee votre semaine ?",
+            "Enchante de vous rencontrer. Alors, dites-moi. Comment vous sentez-vous aujourd'hui ?",
+            "C'est un nom formidable. Parlez-moi un peu plus de vous."
+        ]
+    },
+    {
+        "tag": "help",
+        "patterns": [
+            "Pouvez-vous m'aider ?",
+            " Donnez-moi un coup de main s'il vous plaît",
+            "Pouvez-vous nous aider ?",
+            "Que pouvez-vous faire pour moi ?",
+            "J'ai besoin de soutien",
+            "J'ai besoin d'aide",
+            "Soutenez-moi s'il vous plaît"
+        ],
+        "responses": [
+            "Bien sur. Dites-moi comment je peux vous aider",
+            "Expliquez-moi votre probleme afin que je puisse vous aider.",
+            "Oui, bien sûr. Comment puis-je vous aider ?"
+        ]
+    },
+    {
+        "tag": "triste",
+        "patterns": [
+            "Je me sens seul",
+            "Je me sens si seul",
+            "Je me sens deprime",
+            "Je me sens triste",
+            "Je suis triste",
+            "Je me sens si seul",
+            "Je me sens vide",
+            "Je n'ai personne"
+        ],
+        "responses": [
+            "Je suis desolee de l'apprendre. Je suis la pour toi. En parler pourrait t'aider. Alors, dis-moi pourquoi tu penses que tu te sens comme ça ?",
+            "Je suis la pour toi.Pourriez-vous me dire pourquoi vous vous sentez comme ça ?", 
+            "Pourquoi pensez-vous ressentir cela ?",
+            "Depuis combien de temps vous sentez-vous ainsi ?"
+        ]
+    },
+    {
+        "tag": "stresse",
+        "patterns": [
+            "Je suis tellement stresse ",
+            "Je suis tellement stresse",
+            "Je me sens bloque",
+            "Je me sens toujours stresse",
+            "Je suis tellement epuise"
+        ],
+        "responses": [
+            "D'apres vous, quelle est la cause de cette situation ? ",
+            "Respirez profondement et rassemblez vos idees. Allez vous promener si possible. Hydratez-vous ",
+            "Faites une pause. Allez-y doucement avec vous-même ",
+            "Je suis desole d'entendre cela. Quelle en est la raison ? "
+        ]
+    },
+    {
+        "tag": "sans valeur",
+        "patterns": [
+            "Je me sens si inutile.",
+            "Personne ne m'aime.",
+            "Je ne peux rien y faire.",
+            "Je suis si inutile",
+            "Plus rien n'a de sens"
+        ],
+        "responses": [
+            "C'est tout a fait naturel de se sentir ainsi. Dites-m'en plus. Qu'est-ce qui vous preoccupe encore ?",
+            "Discutons plus en detail des raisons pour lesquelles vous vous sentez ainsi.",
+            "Je tiens tout d'abord a vous dire que vous n'êtes pas seul dans vos sentiments et qu'il y a toujours quelqu'un pour vous aider."
+        ]
+    },
+    {
+        "tag": "deprime",
+        "patterns": [
+            "Je n'en peux plus",
+            "Je suis tellement deprimee",
+            "Je pense que je suis deprime.",
+            "Je souffre de depression"
+        ],
+        "responses": [
+            "Il est utile de parler de ce qui se passe. Tu vas t'en sortir",
+            "Parlez-moi. Dis-m'en plus. Il est utile de s'ouvrir a quelqu'un d'autre.",
+            "Parfois, lorsque nous sommes deprimes, il est difficile de s'interesser a quoi que ce soit. Il peut etre difficile de faire les choses les plus simples. Donnez-vous le temps de guerir."]
+    },
+    {
+        "tag": "heureux",
+        "patterns": [
+            "Je me sens bien aujourd'hui.",
+            "Je suis heureux.",
+            "Je me sens bien.",
+            "Je suis bon.",
+            "joyeux",
+            "Je vais bien",
+            "Je me sens bien"
+        ],
+        "responses": [
+            "C'est tres agreable a entendre. Je suis heureux que vous vous sentiez ainsi.",
+            "Je vois. C'est tres bien.",
+            "S'est-il passe quelque chose qui vous a fait ressentir cela ?"
+        ]
+    },
+    {"tag": "decontracte",
+        "patterns": [
+            "Oh, je vois.",
+            "ok",
+            "d'accord",
+            "agreable",
+            "Quoi qu'il en soit",
+            "K",
+            "Bien",
+            "oui",
+            "oui",
+            "non",
+            "pas vraiment"
+        ],
+        "responses": [
+            "Discutons plus en detail des raisons de ce sentiment.",
+            "Comment vous sentiez-vous la semaine derniere ?",
+            "Je vous ecoute. Poursuivez, s'il vous plaît.",
+            "En savoir plus",
+            "Pouvez-vous nous en dire plus a ce sujet ?",
+            "Venez elucider vos pensees"
+        ]
+    },
+    {
+        "tag": "anxieux",
+        "patterns": [
+            "Je me sens si anxieuse.",
+            "Je suis si anxieuse a cause de "
+        ],
+        "responses": [
+            "Ne soyez pas dur avec vous-même. Quelle en est la raison ?",
+            "Pouvez-vous m'en dire plus sur ce sentiment ?",
+            "Je comprends que cela puisse faire peur. Dites-m'en plus a ce sujet.",
+            "Ne vous laissez pas abattre par les petits soucis. Qu'est-ce qui peut arriver de pire ?"
+        ]
+    },
+    {
+        "tag": "ne pas parler",
+        "patterns": [
+            "Je ne veux pas en parler.",
+            "Non, restez a l'ecart.",
+            "Je n'arrive pas a m'ouvrir.",
+            "Taisez-vous"
+        ],
+        "responses": [
+            "Parler de quelque chose aide vraiment. Si tu n'es pas prêt a t'ouvrir, ce n'est pas grave. Sache que je suis la pour toi, chaque fois que tu as besoin de moi.",
+            "Je veux vous aider. Je le veux vraiment. Mais pour que je puisse t'aider, tu vas devoir me parler.",
+            "Je suis la pour t'ecouter et t'aider a te defouler. Alors n'hesitez pas a me parler.",
+            "Vous pouvez me parler sans crainte d'etre juge."
+        ]
+    },
+    {
+        "tag": "dormir",
+        "patterns": [
+            "Je souffre d'insomnie",
+            "Je ne peux pas dormir.",
+            "Je n'ai pas dormi ces derniers jours.",
+            "Je n'arrive pas a m'endormir.",
+            "Je n'ai pas bien dormi ces derniers jours."
+        ],
+        "responses": [
+            "Quelle en est, selon vous, la raison ?",
+            "Cela semble terrible. Que pensez-vous qu'il y ait derriere tout cela ?"
+        ]
+    },
+    {
+        "tag": "effraye",
+        "patterns": [
+            "J'ai peur",
+            "Cela semble terrible. Que dois-je faire ?",
+            "Non, je ne veux pas ressentir cela.",
+            "J'ai peur pour moi"
+        ],
+        "responses": [
+            "C'est tout a fait naturel de se sentir ainsi. Je suis la pour vous.",
+            "Tout ira bien. Ce sentiment n'est que momentane.",
+            "Je comprends ce que tu ressens. Ne vous rabaissez pas a cause de cela."
+        ]
+    },
+    {
+        "tag": "la mort",
+        "patterns": [
+            "Ma mere est morte",
+            "Mon frere est mort",
+            "Mon pere est mort",
+            "Ma sœur est mort",
+            "Un membre de ma famille est mort",
+            "Mon ami est mort"
+        ],
+        "responses": [
+            "Je suis desolee de l'apprendre. Si tu veux en parler. je suis la.",
+            "Je suis vraiment desolee d'entendre cela. Je suis la pour vous aider a surmonter votre chagrin, votre anxiete et tout ce que vous pouvez ressentir en ce moment.",
+            "Mes condoleances. Je suis la si tu as besoin de parler."
+        ]
+    },
+    {
+        "tag": "comprendre",
+        "patterns": [
+            "Vous ne me comprenez pas.",
+            "Tu n'es qu'un robot. Comment le saurais-tu ?",
+            "Vous ne pouvez pas savoir ce que je vis.",
+            "Vous êtes inutile",
+            "Tu ne peux pas m'aider",
+            "Personne ne me comprend."
+        ],
+        "responses": [
+            "J'ai l'impression de ne pas être tres utile en ce moment.",
+            "Je suis desolee de l'apprendre. Je fais de mon mieux pour vous aider",
+            "Je fais de mon mieux pour vous aider. N'hesitez pas a me parler"
+        ]
+    },
+    {
+        "tag": "fait",
+        "patterns": [
+            "C'est tout.",
+            "Je n'ai plus rien a dire",
+            "Rien d'autre",
+            "C'est tout ce que j'ai a dire",
+            "non, ce serait tout"
+        ],
+        "responses": [
+            "Je vous ai entendu et j'ai tout note. A plus tard.",
+            "Oh, d'accord, nous en avons termine pour aujourd'hui. A plus tard",
+            "Je vous souhaite une bonne journee. A bientôt",
+            "Nous avons termine. Bonne journee a tous",
+            "D'accord, je vois. Profitez bien du reste de votre journee"
+        ]
+    },
+    {
+        "tag": "suicide",
+        "patterns": [
+            "Je veux me suicider",
+            "J'ai pense a me suicider.",
+            "Je veux mourir",
+            "Je vais me suicider",
+            "Je vais me suicider"
+        ],
+        "responses": ["Je suis vraiment desolee de l'apprendre, mais vous avez tant de choses a attendre. N'hesitez pas a demander de l'aide en contactant : 9152987821."]
+    }, 
+    {
+        "tag": "vous detester",
+        "patterns": [
+            "Je te deteste",
+            "Je ne t'aime pas",
+            "Je ne vous fais pas confiance"
+        ],
+        "responses": [
+            "Je suis desole si je vous ai offense de quelque maniere que ce soit. Je suis seulement la pour vous aider",
+            "Pardonnez-moi si je vous ai offense. Je veux seulement aider"
+        ]
+    },
+    {
+        "tag": "me hair",
+        "patterns": [
+            "Tu me detestes",
+            "Je sais que tu me detestes",
+            "Tu ne m'aimes pas"
+        ],
+        "responses": [
+            "Pourquoi ?",
+            "Je suis desole si j'ai eu un comportement qui vous a fait penser cela."
+        ]
+    },
+    {
+        "tag": "par defaut",
+        "patterns": [
+            "examens",
+            "amis",
+            "relation",
+            "petit ami",
+            "petite amie",
+            "famille",
+            "argent",
+            "problemes financiers"
+        ],
+        "responses": [
+            "Je vois. Dites m'en plus",
+            "Je vois. Qu'est-ce qu'il y a d'autre ?",
+            "Dites-m'en plus.",
+            "D'accord. Pourquoi ne pas m'en dire plus ?",
+            "Je vous ecoute. Dites-m'en plus."
+        ]
+    },
+    {
+        "tag": "blagues",
+        "patterns": [
+            "Raconte-moi une blague",
+            "Racontez-moi une autre blague"
+        ],
+        "responses": ["La sante mentale n'est pas une plaisanterie."]
+    },
+    {
+        "tag": "repeter",
+        "patterns": [
+            "Vous m'avez deja dit que",
+            "Vous l'avez deja mentionne",
+            "Pourquoi vous repetez-vous ?"
+        ],
+        "responses": ["Oh, desole, je ne m'en etais pas rendu compte. J'essaierai de ne plus me repeter."]
+    },
+    {
+        "tag": "errone",
+        "patterns": [
+            "Qu'est-ce que vous dites ?",
+            "Cela n'a pas de sens",
+            "Mauvaise reponse",
+            "Mauvaise reponse"
+        ],
+        "responses": ["Je suis vraiment desolee. Essayons encore une fois"]
+    },
+    {
+        "tag": "stupide",
+        "patterns": [
+            "Êtes-vous stupide ?",
+            "Vous etes fou",
+            "Vous etes stupide",
+            "Tu es bete ?"
+            ],
+        "responses": ["J'aimerais que vous ne disiez pas des choses aussi blessantes. Je suis desolee si je n'ai pas ete utile"]
+    },
+    {
+        "tag": "emplacement",
+        "patterns": [
+            "Ou etes-vous ?",
+            "Où habitez-vous ?",
+            "Quel est votre lieu de residence ?"
+            ],
+        "responses": [
+            "Duh Je vis dans ton ordinateur",
+            "Partout",
+            "Quelque part dans l'univers"
+        ]
+    },
+    {
+        "tag": "autre chose",
+        "patterns": [
+            "Je veux parler d'autre chose",
+            "Parlons d'autre chose.",
+            "Pouvons-nous ne pas en parler ?",
+            "Je ne veux pas en parler."
+            ],
+        "responses": [
+            "D'accord, bien sûr. De quoi voulez-vous parler ?",
+            "D'accord, pas de probleme. Y a-t-il quelque chose dont vous voulez parler ?",
+            "Y a-t-il autre chose dont vous voulez parler ?"
+            ]
+    },
+    {
+        "tag": "amis",
+        "patterns": ["Je n'ai pas d'amis"],
+        "responses": ["Je suis desolee de l'apprendre. Sache que je suis la pour toi. En parler pourrait t'aider. Pourquoi penses-tu que tu n'as pas d'amis ?"]
+    },
+    {
+        "tag": "demander",
+        "patterns": ["Puis-je vous demander quelque chose ?"],
+        "responses": [
+            "Je ferai de mon mieux pour vous repondre.",
+            "Bien entendu. N'hesitez pas a me poser des questions. Je ferai de mon mieux pour vous repondre"
+            ]
+    },
+    {  
+        "tag": "probleme",
+        "patterns": [
+            "Probablement parce que mes examens approchent. Je me sens stresse parce que je ne pense pas m'etre assez bien prepare..",
+            "sans doute a cause de mes examens"
+            ],
+        "responses": ["Je vois. Avez-vous pris des mesures pour ne pas vous sentir comme ça ?"]
+    },
+    {
+        "tag": "pas d'approche",
+        "patterns": [
+            "J'imagine que non. Je ne pense qu'a mes examens.",
+            "pas vraiment",
+            "Je suppose que non"
+        ],
+        "responses": ["Ce n'est pas un probleme. Je comprends que cela vous stresse. Je peux vous suggerer quelques conseils pour attenuer ce probleme. Voulez-vous en savoir plus ?"]
+    },
+    {
+        "tag": "en savoir plus",
+        "patterns": [
+            "Bien sûr. J'aimerais en savoir plus a ce sujet.",
+            "Oui, j'aimerais en savoir plus.",
+            "J'aimerais en savoir plus."
+            ],
+        "responses": ["Je vous suggere donc tout d'abord de vous accorder une pause. Penser de plus en plus au probleme n'aide en rien a le resoudre. Vous finirez par vous submerger."]
+    },
+    {
+        "tag": "accord de l'utilisateur",
+        "patterns": [
+            "Oui, tu as raison, je merite une pause.",
+            "Oui, vous avez tout a fait raison"
+            ],
+        "responses": ["Ensuite, je vous suggere de pratiquer la meditation. La meditation peut produire un etat de relaxation profonde et un esprit tranquille."]
+    },
+    {
+        "tag": "meditation",
+        "patterns": [
+            "hmmm cela me semble utile.",
+            "Cela semble utile."
+            ],
+        "responses": ["Concentrez toute votre attention sur votre respiration. Concentrez-vous sur la sensation et l'ecoute lorsque vous inspirez et expirez par les narines. Respirez profondement et lentement. Lorsque votre attention s'egare, revenez doucement a votre respiration."]
+    },
+    {
+        "tag": "utilisateur-meditation",
+        "patterns": [
+            "j'ai fait ce que vous avez dit et je me sens beaucoup mieux. merci beaucoup.",
+            "Je me sens mieux maintenant"
+        ],
+        "responses": ["Concentrez-vous toujours sur ce que vous pouvez contrôler. Lorsque vous vous inquietez, prenez une minute pour examiner les choses que vous pouvez contrôler. Vous ne pouvez pas empêcher une tempête de se produire, mais vous pouvez vous y preparer. Vous ne pouvez pas contrôler le comportement d'une autre personne, mais vous pouvez contrôler votre reaction. Reconnaissez que, parfois, tout ce que vous pouvez contrôler, ce sont vos efforts et votre attitude. Lorsque vous consacrez votre energie aux choses que vous pouvez contrôler, vous êtes beaucoup plus efficace."]
+    },
+    {
+        "tag": "pandora-utile",
+        "patterns": ["Je vais continuer a pratiquer la meditation et me concentrer sur ce que je peux contrôler."],
+        "responses": ["Je suis heureux que vous ayez trouve cela utile. Y a-t-il autre chose que je puisse faire pour vous aider ?"]
+    },
+    {
+        "tag": "conseils d'utilisation",
+        "patterns": [
+            "J'ai besoin d'un conseil.",
+            "J'ai besoin de conseils.",
+            "J'ai besoin d'un avis sur quelque chose"
+        ],
+        "responses": [
+            "Bien sur. Que puis-je faire pour vous aider ?",
+            "D'accord, sur quoi avez-vous besoin de conseils ?"
+        ]
+    },
+    {
+        "tag": "apprendre la sante mentale",
+        "patterns": [
+            "Je veux en savoir plus sur la sante mentale.",
+            "Je veux en savoir plus sur la sante mentale.",
+            "Je souhaite en savoir plus sur la sante mentale."
+        ],
+        "responses": ["C'est vraiment super. Je serais prêt a repondre a tout ce que je sais a ce sujet."]
+    },
+    {
+        "tag": "la sante mentale",
+        "patterns": [
+            "Dites-moi un fait sur la sante mentale",
+            "Dites-moi un autre fait concernant la sante mentale"
+        ],
+        "responses": [
+            "Selon un rapport de l'UNICEF, un Indien sur sept âge de 15 a 24 ans se sent deprime.",
+            "1 jeune sur 5 (13-18 ans) souffre ou souffrira d'une maladie mentale au cours de sa vie.",
+            "La depression est la premiere cause d'invalidite dans le monde."
+            ]
+    },
+    {
+        "tag": "fait-1",
+        "patterns": [
+            "Qu'est-ce que la sante mentale ?",
+            "Definir la sante mentale"
+        ],
+        "responses": [
+            "La sante mentale est un etat de bien-être dans lequel l'individu se rend compte de ses propres capacites, peut faire face au stress normal de la vie, peut travailler de maniere productive et fructueuse, et est capable d'apporter une contribution a sa communaute.",
+            "La sante mentale englobe notre bien-être emotionnel, psychologique et social. Elle affecte notre façon de penser, de ressentir et d'agir. Elle contribue egalement a determiner la maniere dont nous gerons le stress, dont nous sommes en relation avec les autres et dont nous faisons des choix."
+        ]
+    },
+    {
+        "tag": "fait-2",
+        "patterns": [
+            "Pourquoi la sante mentale est-elle importante ?",
+            "Quelle est l'importance de la sante mentale ?"
+            ],
+        "responses": ["Le maintien de la sante mentale est essentiel pour stabiliser les comportements, les emotions et les pensees constructives. Les soins de sante mentale peuvent accroître la productivite, ameliorer l'image de soi et les relations interpersonnelles."]
+    },
+    {
+        "tag": "fait-3",
+        "patterns": [
+            "Qu'est-ce que la depression ?",
+            "Definir la depression"
+        ],
+        "responses": ["Trouble de la sante mentale caracterise par une humeur depressive persistante ou une perte d'interet pour les activites, entraînant une alteration significative de la vie quotidienne."]
+    },
+    {
+        "tag": "fait-5",
+        "patterns": [
+            "Comment savoir si je souffre de depression ?",
+            "Suis-je deprime ?",
+            "Suis-je atteint de depression ?",
+            "Suis-je un malade mental ?"
+        ],
+        "responses": ["Pour qu'un diagnostic de depression soit pose, il faut que la personne ait ressenti une baisse d'humeur ou une perte d'interet ou de plaisir dans la vie pendant au moins deux semaines. Elle doit egalement avoir ressenti les symptômes suivants : tristesse, desespoir ou irritabilite presque tous les jours."]
+    },
+    {
+        "tag": "fait-6",
+        "patterns": [
+            "Qu'est-ce qu'un therapeute ?",
+            "Que fait un therapeute ?"
+        ],
+        "responses": ["Le terme « therapeute » est une designation generale qui fait reference aux professionnels formes pour dispenser des traitements et des services de readaptation. Le terme est souvent applique aux psychologues, mais il peut inclure d'autres personnes qui fournissent une variete de services, y compris les travailleurs sociaux, les conseillers, les coachs de vie, et bien d'autres. "]
+    },
+    {
+        "tag": "fait-7",
+        "patterns": [
+            "Qu'est-ce qu'une therapie ?",
+            "Ai-je besoin d'une therapie ?",
+            "A qui s'adresse la therapie ?"
+        ],
+        "responses": [
+            "La therapie est une forme de traitement qui vise a aider a resoudre des problemes mentaux ou emotionnels.",
+            "La therapie est une forme de traitement qui vise a aider a resoudre des problemes mentaux ou emotionnels. Elle est utile aux personnes souffrant de troubles de la sante mentale ou même de problemes de la vie quotidienne."]
+    },
+    {
+        "tag": "fait-8",
+        "patterns": ["Qu'est-ce qu'une maladie mentale ?"],
+        "responses": ["Les maladies mentales sont des etats de sante qui perturbent les pensees, les emotions, les relations et le fonctionnement quotidien d'une personne. Elles sont associees a une detresse et a une diminution de la capacite a s'engager dans les activites ordinaires de la vie quotidienne. La gravite des maladies mentales est variable : certaines sont relativement benignes et n'interferent qu'avec certains aspects de la vie, comme certaines phobies. A l'autre extremite du spectre, on trouve les maladies mentales graves, qui entraînent une deficience fonctionnelle majeure et une interference avec la vie quotidienne. Il s'agit de troubles tels que la depression majeure, la schizophrenie et les troubles bipolaires, qui peuvent necessiter l'hospitalisation de la personne. Il est important de savoir que les maladies mentales sont des affections medicales qui n'ont rien a voir avec le caractere, l'intelligence ou la volonte d'une personne. Tout comme le diabete est un trouble du pancreas, la maladie mentale est une affection medicale due a la biologie du cerveau. De la même maniere que l'on traite le diabete avec des medicaments et de l'insuline, la maladie mentale peut être traitee avec une combinaison de medicaments et de soutien social. Ces traitements sont tres efficaces, puisque 70 a 90 % des personnes traitees voient leurs symptômes diminuer et leur qualite de vie s'ameliorer. Avec un traitement approprie, il est tout a fait possible pour une personne atteinte de maladie mentale d'etre independante et de reussir."]
+    },
+    {
+        "tag": "fait-9",
+        "patterns": ["Qui est touche par la maladie mentale ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-10",
+        "patterns": ["Quelles sont les causes des maladies mentales ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-11",
+        "patterns": ["Quels sont les signes avant-coureurs d'une maladie mentale ?"],
+        "responses": ["Les symptomes des troubles de la sante mentale varient en fonction du type et de la gravite de l'affection. Voici une liste de symptomes generaux qui peuvent suggerer un trouble de la sante mentale, en particulier lorsque plusieurs symptômes sont exprimes en même temps. NChez les adultes : NDes pensees confuses NUne tristesse ou une irritabilite de longue duree NDes hauts et des bas extrêmes dans l'humeur NUne peur, une inquietude ou une anxiete excessives, peur ou d'anxiete excessives ; - retrait social ; - changements spectaculaires dans les habitudes alimentaires ou de sommeil ; - forts sentiments de colere ; - idees delirantes ou hallucinations (voir ou entendre des choses qui n'existent pas vraiment) ; - incapacite croissante a faire face aux problemes et activites quotidiens ; - pensees suicidaires ; - deni des problmes evidents ; - nombreux problmes physiques inexpliques ; - abus de drogues et/ou d'alcool. Chez les enfants plus ages et les preadolescents : N Abus de drogues et/ou d'alcool N Incapacite a faire face aux problmes et activites quotidiens N Changements dans les habitudes de sommeil et/ou d'alimentation N Plaintes excessives de problemes physiques N Defier l'autorite, secher l'ecole, voler ou endommager des biens N Peur intense de prendre du poids N Humeur negative durable, souvent accompagnee d'un manque d'appetit et de pensees de mort N Explosions frequentes de colere  Chez les enfants plus jeunes : Changements dans les resultats scolaires Mauvaises notes malgre de gros efforts Inquietude ou anxiete excessives Hyperactivite Cauchemars persistants Desobeissance persistante et/ou comportement agressif Coleres frequentes"]
+    },
+    {
+        "tag": "fait-12",
+        "patterns": ["Les personnes atteintes de maladie mentale peuvent-elles se retablir ?"],
+        "responses": ["Lorsqu'on guerit d'une maladie mentale, l'identification et le traitement precoces sont d'une importance vitale. Selon la nature de la maladie, il existe toute une serie de traitements efficaces. Pour tout type de traitement, il est essentiel que la personne concernee soit proactive et pleinement engagee dans son propre processus de retablissement. De nombreuses personnes atteintes de maladies mentales qui sont diagnostiquees et traitees reagissent bien, meme si certaines peuvent voir leurs symptomes reapparaître. Meme dans ce cas, avec un suivi et une gestion attentifs du trouble, il est tout a fait possible de mener une vie epanouie et productive."]
+    },
+    {
+        "tag": "fait-13",
+        "patterns": ["Que dois-je faire si je connais une personne qui semble presenter les symptomes d'un trouble mental ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-14",
+        "patterns": ["Comment trouver un professionnel de la sante mentale pour moi ou mon enfant ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-15",
+        "patterns": ["Quelles sont les options therapeutiques disponibles ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-16",
+        "patterns": ["Si je participe au traitement, que dois-je savoir ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-17",
+        "patterns": ["Quelle est la difference entre les professionnels de la sante mentale ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-18",
+        "patterns": ["Comment puis-je trouver un professionnel de la sante mentale qui convienne a mon enfant ou a moi-meme ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-19",
+        "patterns": ["Ou puis-je obtenir de l'aide ?"],
+        "responses": [""]
+    },    
+    {
+        "tag": "fait-20",
+        "patterns": ["Que dois-je savoir avant de commencer un nouveau medicament ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-21",
+        "patterns": ["Ou puis-je trouver une therapie ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-22",
+        "patterns": ["Ou puis-je me renseigner sur les types de traitement de la sante mentale ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-23",
+        "patterns": ["Quels sont les differents types de professionnels de la sante mentale ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-24",
+        "patterns": ["Ou puis-je trouver un groupe de soutien ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-25",
+        "patterns": ["Peut-on prevenir les problmes de sante mentale ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-26",
+        "patterns": [
+            "Existe-t-il des remedes aux problmes de sante mentale ?"
+        ],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-27",
+        "patterns": ["Quelles sont les causes des problemes de sante mentale ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-28",
+        "patterns": ["Que dois-je faire si je m'inquiete pour ma sante mentale ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-29",
+        "patterns": ["Comment savoir si je ne me sens pas bien ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-30",
+        "patterns": ["Comment maintenir des liens sociaux ? Que faire si je me sens seul ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-31",
+        "patterns": ["Quelle est la difference entre l'anxiete et le stress ?"],
+        "responses": [""]
+    },
+    {
+        "tag": "fait-32",
+        "patterns": [
+            "Quelle est la difference entre la tristesse et la depression ?",
+            "difference entre tristesse et depression"
+            ],
+        "responses": [""]
+    }
+
+    ]
+}
